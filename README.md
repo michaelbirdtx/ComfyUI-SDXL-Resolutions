@@ -25,7 +25,7 @@ A ComfyUI custom node that provides quick access to all image resolutions for th
 
 2. Clone this repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/ComfyUI-Z-Image-Turbo-Resolutions.git
+   git clone https://github.com/SaTaNoob/ComfyUI-Z-Image-Turbo-Resolutions.git
    ```
 
 3. Restart ComfyUI
