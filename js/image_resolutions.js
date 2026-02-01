@@ -53,18 +53,6 @@ const RESOLUTIONS = {
         "768x1344 (4:7)",
         "1344x576 (7:3)",
         "576x1344 (3:7)"
-    ],
-    "ZIT Optimized": [
-        "1024x1024 (1:1)",
-        "832x1216 (portrait, ~13:19)",
-        "1216x832 (landscape, ~19:13)",
-        "768x1152 (portrait)",
-        "1152x768 (landscape)",
-        "896x1344 (vertical, text-first)",
-        "1344x896 (horizontal, text-first)",
-        "1152x648 (16:9 approx, thumbnails)",
-        "648x1152 (9:16 approx)",
-        "1216x684 (16:9, YouTube-style)"
     ]
 };
 
