@@ -1,51 +1,77 @@
-class ZImageTurboResolutions:
+class ImageResolutions:
     """
     A custom node for selecting turbo-optimized image resolutions
     """
     
     # Resolution mappings with all ratio options
+
     RESOLUTIONS = {
         "1024": [
             "1024x1024 (1:1)",
             "1152x896 (9:7)",
             "896x1152 (7:9)",
-            "1152x864 (4:3)",
-            "864x1152 (3:4)",
-            "1248x832 (3:2)",
-            "832x1248 (2:3)",
-            "1280x720 (16:9)",
-            "720x1280 (9:16)",
-            "1344x576 (21:9)",
-            "576x1344 (9:21)"
+            "1280x960 (4:3)",
+            "960x1280 (3:4)",
+            "1216x832 (19:13)",
+            "832x1216 (13:19)",
+            "1344x768 (7:4)",
+            "768x1344 (4:7)",
+            "1344x576 (7:3)",
+            "576x1344 (3:7)"
         ],
         "1280": [
             "1280x1280 (1:1)",
-            "1440x1120 (9:7)",
-            "1120x1440 (7:9)",
-            "1472x1104 (4:3)",
-            "1104x1472 (3:4)",
+            "1472x1152 (23:18)",
+            "1152x1472 (18:23)",
+            "1536x1152 (4:3)",
+            "1152x1536 (3:4)",
             "1536x1024 (3:2)",
             "1024x1536 (2:3)",
-            "1536x864 (16:9)",
-            "864x1536 (9:16)",
-            "1680x720 (21:9)",
-            "720x1680 (9:21)"
+            "1792x1024 (7:4)",
+            "1024x1792 (4:7)",
+            "1792x768 (7:3)",
+            "768x1792 (3:7)"
         ],
         "1536": [
             "1536x1536 (1:1)",
             "1728x1344 (9:7)",
             "1344x1728 (7:9)",
-            "1728x1296 (4:3)",
-            "1296x1728 (3:4)",
-            "1872x1248 (3:2)",
-            "1248x1872 (2:3)",
+            "1792x1344 (4:3)",
+            "1344x1792 (3:4)",
+            "1920x1280 (3:2)",
+            "1280x1920 (2:3)",
             "2048x1152 (16:9)",
             "1152x2048 (9:16)",
-            "2016x864 (21:9)",
-            "864x2016 (9:21)"
+            "2240x960 (7:3)",
+            "960x2240 (3:7)"
+        ],
+        "PonyXL Optimized": [
+            "1024x1024 (1:1)",
+            "1152x896 (9:7)",
+            "896x1152 (7:9)",
+            "1152x864 (4:3)",
+            "864x1152 (3:4)",
+            "1216x832 (19:13)",
+            "832x1216 (13:19)",
+            "1344x768 (7:4)",
+            "768x1344 (4:7)",
+            "1344x576 (7:3)",
+            "576x1344 (3:7)"
+        ],
+        "ZIT Optimized": [
+            "1024x1024 (1:1)",
+            "832x1216 (portrait, ~13:19)",
+            "1216x832 (landscape, ~19:13)",
+            "768x1152 (portrait)",
+            "1152x768 (landscape)",
+            "896x1344 (vertical, text-first)",
+            "1344x896 (horizontal, text-first)",
+            "1152x648 (16:9 approx, thumbnails)",
+            "648x1152 (9:16 approx)",
+            "1216x684 (16:9, YouTube-style)"
         ]
     }
-    
+
     @classmethod
     def INPUT_TYPES(cls):
         # Get all resolution options
@@ -88,9 +114,9 @@ class ZImageTurboResolutions:
 
 # Node registration
 NODE_CLASS_MAPPINGS = {
-    "ZImageTurboResolutions": ZImageTurboResolutions
+    "ImageResolutions": ImageResolutions
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "ZImageTurboResolutions": "Z Image Turbo Resolutions"
+    "ImageResolutions": "Image Resolutions"
 }
