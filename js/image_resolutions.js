@@ -57,9 +57,9 @@ const RESOLUTIONS = {
 };
 
 app.registerExtension({
-    name: "ImageResolutions",
+    name: "SDXLImageResolutions",
     async beforeRegisterNodeDef(nodeType, nodeData, app) {
-        if (nodeData.name === "ImageResolutions") {
+        if (nodeData.name === "SDXLImageResolutions") {
             const onNodeCreated = nodeType.prototype.onNodeCreated;
             
             nodeType.prototype.onNodeCreated = function() {
