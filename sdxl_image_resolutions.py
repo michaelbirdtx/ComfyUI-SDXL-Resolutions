@@ -1,6 +1,6 @@
-class ImageResolutions:
+class SDXLImageResolutions:
     """
-    A custom node for selecting turbo-optimized image resolutions
+    A custom node for selecting sdxl-optimized image resolutions
     """
     
     # Resolution mappings with all ratio options
@@ -102,9 +102,9 @@ class ImageResolutions:
 
 # Node registration
 NODE_CLASS_MAPPINGS = {
-    "ImageResolutions": ImageResolutions
+    "SDXLImageResolutions": SDXLImageResolutions
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "ImageResolutions": "Image Resolutions"
+    "SDXLImageResolutions": "SDXL Image Resolutions"
 }

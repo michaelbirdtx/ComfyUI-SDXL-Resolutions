@@ -9,8 +9,8 @@ Highlights
 - Python node implementation and matching client-side JS helper to filter ratio options dynamically
 
 Files
-- `image_resolutions.py`: Python node implementation (registers `ImageResolutions`)
-- `js/image_resolutions.js`: Client-side helper to dynamically populate aspect ratio options
+- `sdxl_image_resolutions.py`: Python node implementation (registers `SDXLImageResolutions`)
+- `js/sdxl_image_resolutions.js`: Client-side helper to dynamically populate aspect ratio options
 - `__init__.py`: Module export for ComfyUI to import mappings
 
 License
