@@ -1,7 +1,7 @@
 ComfyUI Image Resolutions
 =========================
 
-This repository provides a small custom node for ComfyUI that makes it easy to select optimized image resolutions and aspect ratios. The node exposes a set of curated resolution presets (including model-specific sets) and returns the selected resolution along with width and height values for use in ComfyUI pipelines.
+This repository provides a small custom node for ComfyUI that makes it easy to select optimized image resolutions and aspect ratios for SDXL-based models. The node exposes a set of curated resolution presets (including model-specific sets) and returns the selected resolution along with width and height values for use in ComfyUI pipelines.
 
 Highlights
 - Simple node to pick resolutions and aspect ratios

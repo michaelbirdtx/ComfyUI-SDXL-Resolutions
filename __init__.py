@@ -1,4 +1,4 @@
-from .image_resolutions import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+from .sdxl_image_resolutions import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
 
 # Set web directory for JavaScript files
 WEB_DIRECTORY = "./js"
